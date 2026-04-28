@@ -18,22 +18,22 @@
 
 <body>
     <header class="header">
-        <div class="container header-container">
+        <div class="container header__container">
             <a href="#" class="logo">
-                <i class="fa-solid fa-bolt highlight-text"></i> Criativa<span>Web</span>
+                <i class="fa-solid fa-bolt u-text-highlight"></i> Criativa<span>Web</span>
             </a>
 
-            <button class="mobile-menu-btn" id="mobile-btn" aria-label="Menu principal">
+            <button class="header__menu-btn" id="mobile-btn" aria-label="Menu principal">
                 <i class="fa-solid fa-bars"></i>
             </button>
 
-            <nav class="navbar" id="navbar">
-                <ul class="nav-list">
-                    <li><a href="#home" class="nav-link">Home</a></li>
-                    <li><a href="#sobre" class="nav-link">Sobre Nós</a></li>
-                    <li><a href="#servicos" class="nav-link">Serviços</a></li>
-                    <li><a href="#depoimentos" class="nav-link">Depoimentos</a></li>
-                    <li><a href="#contato" class="btn btn-outline btn-nav">Contato</a></li>
+            <nav class="header__nav" id="navbar">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item"><a href="#home" class="header__nav-link">Home</a></li>
+                    <li class="header__nav-item"><a href="#sobre" class="header__nav-link">Sobre Nós</a></li>
+                    <li class="header__nav-item"><a href="#servicos" class="header__nav-link">Serviços</a></li>
+                    <li class="header__nav-item"><a href="#depoimentos" class="header__nav-link">Depoimentos</a></li>
+                    <li class="header__nav-item"><a href="#contato" class="btn btn--outline header__btn-nav">Contato</a></li>
                 </ul>
             </nav>
         </div>
@@ -42,49 +42,43 @@
     <main>
         <!-- HOME SECTION -->
         <section id="home" class="hero section">
-            <div class="container hero-container">
-                <div class="hero-content">
-                    <span class="badge">Agência Digital</span>
-                    <h1>Criamos experiências digitais <span class="highlight-text">memoráveis.</span></h1>
-                    <p>Combinamos design inovador, tecnologia de ponta e estratégia de marca para elevar a sua presença
-                        digital.</p>
-                    <div class="hero-actions">
-                        <a href="#projetos" class="btn btn-primary">Começar Projeto <i
-                                class="fa-solid fa-arrow-right"></i></a>
+            <div class="container hero__container">
+                <div class="hero__content">
+                    <span class="badge badge--primary">Agência Digital</span>
+                    <h1 class="hero__title">Criamos experiências digitais <span class="u-text-highlight">memoráveis.</span></h1>
+                    <p class="hero__description">Combinamos design inovador, tecnologia de ponta e estratégia de marca para elevar a sua presença digital.</p>
+                    <div class="hero__actions">
+                        <a href="#projetos" class="btn btn--primary">Começar Projeto <i class="fa-solid fa-arrow-right btn__icon"></i></a>
                     </div>
                 </div>
-                <div class="hero-image-box effect-glass">
+                <div class="hero__image-box u-glass">
                     <img srcset="img/hero-small.png 480w, img/hero.png 800w, img/hero-large.png 1200w"
                         sizes="(max-width: 600px) 90vw, (max-width: 900px) 800px, 600px" src="img/hero.png"
-                        alt="Escritório moderno de design digital" class="img-responsive floating-img">
+                        alt="Escritório moderno de design digital" class="u-img-responsive u-img-floating">
                 </div>
             </div>
         </section>
 
         <!-- SOBRE NÓS SECTION -->
-        <section id="sobre" class="sobre section bg-accent">
-            <div class="container sobre-container">
-                <div class="sobre-image-box">
+        <section id="sobre" class="sobre section u-bg-accent">
+            <div class="container sobre__container">
+                <div class="sobre__image-box">
                     <img srcset="img/about-small.png 480w, img/about.png 800w" sizes="(max-width: 768px) 90vw, 500px"
                         src="img/about.png" alt="Nossa equipe colaborando em um projeto"
-                        class="img-responsive rounded-img">
-                    <div class="experience-badge effect-glass">
-                        <span class="number">10+</span>
-                        <span class="text">Anos de Inovação</span>
+                        class="u-img-responsive u-img-rounded u-glass-shadow">
+                    <div class="experience-badge u-glass">
+                        <span class="experience-badge__number">10+</span>
+                        <span class="experience-badge__text">Anos de Inovação</span>
                     </div>
                 </div>
-                <div class="sobre-content">
-                    <h2 class="section-title">Sobre a <span class="highlight-text">Nossa Agência</span></h2>
-                    <p class="lead">Nascemos da paixão por transformar a interação entre marcas e pessoas no ambiente
-                        digital.</p>
-                    <p>A Agência Criativa Web é composta por um time de designers, desenvolvedores e estrategistas
-                        focados em construir produtos únicos. Nossos valores são pautados em <strong>inovação</strong>,
-                        <strong>transparência</strong> e <strong>resultados reais</strong>.
-                    </p>
+                <div class="sobre__content">
+                    <h2 class="section__title">Sobre a <span class="u-text-highlight">Nossa Agência</span></h2>
+                    <p class="u-text-lead">Nascemos da paixão por transformar a interação entre marcas e pessoas no ambiente digital.</p>
+                    <p class="sobre__description">A Agência Criativa Web é composta por um time de designers, desenvolvedores e estrategistas focados em construir produtos únicos. Nossos valores são pautados em <strong>inovação</strong>, <strong>transparência</strong> e <strong>resultados reais</strong>.</p>
                     <ul class="features-list">
-                        <li><i class="fa-solid fa-check highlight-text"></i> Design Centrado no Usuário (UX/UI)</li>
-                        <li><i class="fa-solid fa-check highlight-text"></i> Tecnologias Web Modernas</li>
-                        <li><i class="fa-solid fa-check highlight-text"></i> Foco em Performance e SEO</li>
+                        <li class="features-list__item"><i class="fa-solid fa-check features-list__icon u-text-highlight"></i> Design Centrado no Usuário (UX/UI)</li>
+                        <li class="features-list__item"><i class="fa-solid fa-check features-list__icon u-text-highlight"></i> Tecnologias Web Modernas</li>
+                        <li class="features-list__item"><i class="fa-solid fa-check features-list__icon u-text-highlight"></i> Foco em Performance e SEO</li>
                     </ul>
                 </div>
             </div>
@@ -93,78 +87,70 @@
         <!-- SERVIÇOS SECTION -->
         <section id="servicos" class="servicos section">
             <div class="container">
-                <div class="section-header center">
-                    <h2 class="section-title">Nossos <span class="highlight-text">Serviços</span></h2>
-                    <p>Soluções digitais completas para impulsionar o seu negócio na era digital.</p>
+                <div class="section__header u-text-center">
+                    <h2 class="section__title">Nossos <span class="u-text-highlight">Serviços</span></h2>
+                    <p class="section__description">Soluções digitais completas para impulsionar o seu negócio na era digital.</p>
                 </div>
 
-                <div class="grid-servicos">
-                    <div class="servico-card effect-glass">
-                        <div class="icon-box"><i class="fa-solid fa-pen-nib"></i></div>
-                        <h3>Design Gráfico e UX/UI</h3>
-                        <p>Criamos identidades visuais marcantes e interfaces intuitivas que encantam os usuários e
-                            valorizam sua marca.</p>
+                <div class="servicos__grid">
+                    <div class="card-servico u-glass">
+                        <div class="card-servico__icon"><i class="fa-solid fa-pen-nib"></i></div>
+                        <h3 class="card-servico__title">Design Gráfico e UX/UI</h3>
+                        <p class="card-servico__description">Criamos identidades visuais marcantes e interfaces intuitivas que encantam os usuários e valorizam sua marca.</p>
                     </div>
 
-                    <div class="servico-card effect-glass">
-                        <div class="icon-box"><i class="fa-solid fa-code"></i></div>
-                        <h3>Desenvolvimento Web</h3>
-                        <p>Sites institucionais, e-commerces e web apps de alta performance desenvolvidos com as
-                            tecnologias mais recentes.</p>
+                    <div class="card-servico u-glass">
+                        <div class="card-servico__icon"><i class="fa-solid fa-code"></i></div>
+                        <h3 class="card-servico__title">Desenvolvimento Web</h3>
+                        <p class="card-servico__description">Sites institucionais, e-commerces e web apps de alta performance desenvolvidos com as tecnologias mais recentes.</p>
                     </div>
 
-                    <div class="servico-card effect-glass">
-                        <div class="icon-box"><i class="fa-solid fa-rocket"></i></div>
-                        <h3>Branding e Posicionamento</h3>
-                        <p>Estratégia completa para o posicionamento da sua marca, conectando o seu propósito com o
-                            público ideal.</p>
+                    <div class="card-servico u-glass">
+                        <div class="card-servico__icon"><i class="fa-solid fa-rocket"></i></div>
+                        <h3 class="card-servico__title">Branding e Posicionamento</h3>
+                        <p class="card-servico__description">Estratégia completa para o posicionamento da sua marca, conectando o seu propósito com o público ideal.</p>
                     </div>
 
-                    <div class="servico-card effect-glass">
-                        <div class="icon-box"><i class="fa-solid fa-chart-line"></i></div>
-                        <h3>Marketing Digital</h3>
-                        <p>Campanhas otimizadas, SEO e automação para gerar leads e converter tráfego em resultados para
-                            seu negócio.</p>
+                    <div class="card-servico u-glass">
+                        <div class="card-servico__icon"><i class="fa-solid fa-chart-line"></i></div>
+                        <h3 class="card-servico__title">Marketing Digital</h3>
+                        <p class="card-servico__description">Campanhas otimizadas, SEO e automação para gerar leads e converter tráfego em resultados para seu negócio.</p>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- DEPOIMENTOS SECTION -->
-        <section id="depoimentos" class="depoimentos section bg-accent">
+        <section id="depoimentos" class="depoimentos section u-bg-accent">
             <div class="container">
-                <div class="section-header center">
-                    <h2 class="section-title">O que <span class="highlight-text">Dizem</span></h2>
-                    <p>Histórias de sucesso de quem confiou no nosso trabalho.</p>
+                <div class="section__header u-text-center">
+                    <h2 class="section__title">O que <span class="u-text-highlight">Dizem</span></h2>
+                    <p class="section__description">Histórias de sucesso de quem confiou no nosso trabalho.</p>
                 </div>
 
-                <div class="depoimentos-container">
-                    <div class="depoimento-card effect-glass">
-                        <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
-                        <p class="depoimento-texto">"A Agência Criativa Web transformou completamente a nossa presença
-                            online. O novo site não é apenas lindo, mas aumentou nossas conversões em 150% no primeiro
-                            mês!"</p>
+                <div class="depoimentos__grid">
+                    <div class="card-depoimento u-glass">
+                        <div class="card-depoimento__icon"><i class="fa-solid fa-quote-left"></i></div>
+                        <p class="card-depoimento__text">"A Agência Criativa Web transformou completamente a nossa presença online. O novo site não é apenas lindo, mas aumentou nossas conversões em 150% no primeiro mês!"</p>
                         <div class="cliente-info">
                             <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
-                                alt="Foto da cliente Marina" class="cliente-avatar">
-                            <div>
-                                <h4>Marina Silva</h4>
-                                <span>CEO, TechNova</span>
+                                alt="Foto da cliente Marina" class="cliente-info__avatar">
+                            <div class="cliente-info__details">
+                                <h4 class="cliente-info__name">Marina Silva</h4>
+                                <span class="cliente-info__role">CEO, TechNova</span>
                             </div>
                         </div>
                     </div>
 
-                    <div class="depoimento-card effect-glass">
-                        <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
-                        <p class="depoimento-texto">"Profissionais super dedicados e design excepcional. O projeto
-                            superou todas as minhas expectativas, desde a estratégia de branding até o desenvolvimento
-                            completo."</p>
+                    <div class="card-depoimento u-glass">
+                        <div class="card-depoimento__icon"><i class="fa-solid fa-quote-left"></i></div>
+                        <p class="card-depoimento__text">"Profissionais super dedicados e design excepcional. O projeto superou todas as minhas expectativas, desde a estratégia de branding até o desenvolvimento completo."</p>
                         <div class="cliente-info">
                             <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
-                                alt="Foto do cliente Carlos" class="cliente-avatar">
-                            <div>
-                                <h4>Carlos Eduardo</h4>
-                                <span>Diretor de Marketing, EcoStore</span>
+                                alt="Foto do cliente Carlos" class="cliente-info__avatar">
+                            <div class="cliente-info__details">
+                                <h4 class="cliente-info__name">Carlos Eduardo</h4>
+                                <span class="cliente-info__role">Diretor de Marketing, EcoStore</span>
                             </div>
                         </div>
                     </div>
@@ -175,55 +161,51 @@
         <!-- CONTATO SECTION -->
         <section id="contato" class="contato section">
             <div class="container">
-                <div class="contato-grid">
-                    <div class="contato-info">
-                        <h2 class="section-title">Vamos <span class="highlight-text">Conversar?</span></h2>
-                        <p>Pronto para transformar a sua ideia em realidade? Entre em contato e vamos discutir o seu
-                            próximo projeto.</p>
+                <div class="contato__grid">
+                    <div class="contato__info">
+                        <h2 class="section__title">Vamos <span class="u-text-highlight">Conversar?</span></h2>
+                        <p class="contato__description">Pronto para transformar a sua ideia em realidade? Entre em contato e vamos discutir o seu próximo projeto.</p>
 
-                        <div class="info-items">
-                            <div class="info-item">
-                                <i class="fa-solid fa-location-dot"></i>
-                                <div>
-                                    <h4>Endereço</h4>
-                                    <p>Rua Conênego lafaiete,<999br>São Sebastião do Maranhão- MG, 39795-000</p>
+                        <div class="contact-info-list">
+                            <div class="contact-info-list__item">
+                                <i class="fa-solid fa-location-dot contact-info-list__icon"></i>
+                                <div class="contact-info-list__details">
+                                    <h4 class="contact-info-list__title">Endereço</h4>
+                                    <p class="contact-info-list__text">Rua Conênego lafaiete,<br>São Sebastião do Maranhão- MG, 39795-000</p>
                                 </div>
                             </div>
-                            <div class="info-item">
-                                <i class="fa-solid fa-phone"></i>
-                                <div>
-                                    <h4>Telefone</h4>
-                                    <p>+55 (33) 99999-9999</p>
+                            <div class="contact-info-list__item">
+                                <i class="fa-solid fa-phone contact-info-list__icon"></i>
+                                <div class="contact-info-list__details">
+                                    <h4 class="contact-info-list__title">Telefone</h4>
+                                    <p class="contact-info-list__text">+55 (33) 99999-9999</p>
                                 </div>
                             </div>
-                            <div class="info-item">
-                                <i class="fa-solid fa-envelope"></i>
-                                <div>
-                                    <h4>E-mail</h4>
-                                    <p>ola@criativaweb.com.br</p>
+                            <div class="contact-info-list__item">
+                                <i class="fa-solid fa-envelope contact-info-list__icon"></i>
+                                <div class="contact-info-list__details">
+                                    <h4 class="contact-info-list__title">E-mail</h4>
+                                    <p class="contact-info-list__text">ola@criativaweb.com.br</p>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="contato-form effect-glass">
-                        <form id="form-contato">
-                            <div class="form-group">
-                                <label for="nome">Nome Completo</label>
-                                <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+                    <div class="contato__form-wrapper u-glass">
+                        <form id="form-contato" class="form">
+                            <div class="form__group">
+                                <label for="nome" class="form__label">Nome Completo</label>
+                                <input type="text" id="nome" name="nome" placeholder="Seu nome" class="form__input" required>
                             </div>
-                            <div class="form-group">
-                                <label for="email">E-mail Profissional</label>
-                                <input type="email" id="email" name="email" placeholder="seu.email@empresa.com"
-                                    required>
+                            <div class="form__group">
+                                <label for="email" class="form__label">E-mail Profissional</label>
+                                <input type="email" id="email" name="email" placeholder="seu.email@empresa.com" class="form__input" required>
                             </div>
-                            <div class="form-group">
-                                <label for="mensagem">Como podemos ajudar?</label>
-                                <textarea id="mensagem" name="mensagem" rows="4" placeholder="Descreva seu projeto..."
-                                    required></textarea>
+                            <div class="form__group">
+                                <label for="mensagem" class="form__label">Como podemos ajudar?</label>
+                                <textarea id="mensagem" name="mensagem" rows="4" placeholder="Descreva seu projeto..." class="form__input" required></textarea>
                             </div>
-                            <button type="submit" class="btn btn-primary btn-block">Enviar Mensagem <i
-                                    class="fa-solid fa-paper-plane"></i></button>
+                            <button type="submit" class="btn btn--primary btn--block">Enviar Mensagem <i class="fa-solid fa-paper-plane btn__icon"></i></button>
                         </form>
                     </div>
                 </div>
@@ -232,17 +214,17 @@
     </main>
 
     <footer class="footer">
-        <div class="container footer-content">
-            <div class="footer-logo">
+        <div class="container footer__content">
+            <div class="footer__logo">
                 <a href="#" class="logo">
-                    <i class="fa-solid fa-bolt highlight-text"></i> Criativa<span>Web</span>
+                    <i class="fa-solid fa-bolt u-text-highlight"></i> Criativa<span>Web</span>
                 </a>
-                <p>&#169 2026 Marcos Danilo. Todos os direitos reservados.</p>
+                <p class="footer__copyright">&#169 2026 Marcos Danilo. Todos os direitos reservados.</p>
             </div>
             <div class="social-links">
-                <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href="#" aria-label="Behance"><i class="fa-brands fa-behance"></i></a>
+                <a href="#" class="social-links__link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="social-links__link" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#" class="social-links__link" aria-label="Behance"><i class="fa-brands fa-behance"></i></a>
             </div>
         </div>
     </footer>
@@ -251,12 +233,12 @@
         // Menu Responsivo Toggle
         const mobileBtn = document.getElementById('mobile-btn');
         const navbar = document.getElementById('navbar');
-        const navLinks = document.querySelectorAll('.nav-link');
+        const navLinks = document.querySelectorAll('.header__nav-link');
 
         mobileBtn.addEventListener('click', () => {
-            navbar.classList.toggle('active');
+            navbar.classList.toggle('header__nav--active');
             const icon = mobileBtn.querySelector('i');
-            if (navbar.classList.contains('active')) {
+            if (navbar.classList.contains('header__nav--active')) {
                 icon.classList.remove('fa-bars');
                 icon.classList.add('fa-xmark');
             } else {
@@ -268,7 +250,7 @@
         // Fechar menu ao clicar num link (mobile)
         navLinks.forEach(link => {
             link.addEventListener('click', () => {
-                navbar.classList.remove('active');
+                navbar.classList.remove('header__nav--active');
                 const icon = mobileBtn.querySelector('i');
                 icon.classList.remove('fa-xmark');
                 icon.classList.add('fa-bars');
