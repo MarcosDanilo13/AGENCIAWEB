@@ -1,0 +1,25 @@
+{
+  "name": "agenciaweb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "sass scss/estilos.scss css/estilos.css --style=expanded",
+    "watch": "sass --watch scss/estilos.scss css/estilos.css --style=expanded"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarcosDanilo13/AGENCIAWEB.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/MarcosDanilo13/AGENCIAWEB/issues"
+  },
+  "homepage": "https://github.com/MarcosDanilo13/AGENCIAWEB#readme",
+  "devDependencies": {
+    "sass": "^1.100.0"
+  }
+}

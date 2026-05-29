@@ -1,0 +1,32 @@
+@use 'variaveis' as *;
+
+// Mixin 1: Botão básico / base
+@mixin button-base {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.875rem 1.75rem;
+  font-family: $font-heading;
+  font-weight: 600;
+  border-radius: 2rem;
+  cursor: pointer;
+  border: none;
+  transition: $transition;
+  text-align: center;
+}
+
+// Mixin 2: Efeito Glassmorphism
+@mixin glass-effect {
+  background: $glass-bg;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid $glass-border;
+  box-shadow: $glass-shadow;
+  border-radius: $radius;
+}
+
+// Mixin 3: Espaçamentos padrão para seções
+@mixin section-padding-mix {
+  padding: $section-padding;
+}

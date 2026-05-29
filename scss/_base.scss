@@ -1,0 +1,107 @@
+@use 'variaveis' as *;
+@use 'mixins' as *;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: $font-body;
+  background-color: $bg-color;
+  color: $text-light;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-heading;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: $transition;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+// Keyframes de animação
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+// Classes utilitárias globais (u-*)
+.u-bg-accent {
+  background-color: $bg-accent;
+}
+
+.u-text-center {
+  text-align: center;
+}
+
+.u-text-highlight {
+  background: linear-gradient(135deg, $accent, $secondary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  display: inline-block;
+}
+
+.u-text-lead {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-bottom: $espacamento;
+  color: #fff;
+}
+
+.u-glass {
+  @include glass-effect;
+}
+
+.u-glass-shadow {
+  box-shadow: $glass-shadow;
+}
+
+.u-img-responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+.u-img-rounded {
+  border-radius: $radius;
+}
+
+.u-img-floating {
+  border-radius: 0.75rem;
+  animation: float 6s ease-in-out infinite;
+}

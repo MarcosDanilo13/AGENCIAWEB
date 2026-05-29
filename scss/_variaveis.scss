@@ -1,0 +1,26 @@
+// Paleta de Cores Moderna (Dark Mode)
+$bg-color: #0a0a0f;
+$bg-surface: #14141f;
+$bg-accent: #101018;
+$primary: #7B2CBF;
+$secondary: #F72585;
+$accent: #4CC9F0;
+$text-light: #ffffff;
+$text-muted: #a8a8b3;
+
+// Tipografia
+$font-heading: 'Outfit', sans-serif;
+$font-body: 'Inter', sans-serif;
+
+// Efeitos e Glassmorphism
+$glass-bg: rgba(255, 255, 255, 0.03);
+$glass-border: rgba(255, 255, 255, 0.08);
+$glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
+
+// Outros
+$transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+$radius: 1rem;
+$section-padding: 6rem 0;
+
+// Variável para demonstração de operadores (ex: margin-bottom: calc($espacamento / 2))
+$espacamento: 1.5rem;
